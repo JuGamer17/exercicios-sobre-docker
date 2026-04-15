@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(145, 145, 145);
+    height: 85vi;
+}
+
+#base{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40vh;
+    
+}
