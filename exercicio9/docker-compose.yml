@@ -1,0 +1,24 @@
+services:
+  db:
+    image: mysql:8.0
+
+    container_name: dataBase
+
+    environment:
+      MYSQL_ROOT_PASSWORD: kksaikokk
+      MYSQL_DATABASE: OTalDoBanco
+      MYSQL_USER: JuGames
+      MYSQL_PASSWORD: 2345678
+    
+    volumes:
+      - ./db:/var/lib/mysql
+    
+
+  web:
+    image: nginx:alpine
+
+    ports:
+      - "8080:80"
+
+    volumes:
+      - ./html:/usr/share/nginx/html
